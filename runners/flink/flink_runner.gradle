@@ -151,6 +151,10 @@ dependencies {
   compile "org.apache.flink:flink-java:$flink_version"
   compile "org.apache.flink:flink-runtime_2.11:$flink_version"
   compile "org.apache.flink:flink-streaming-java_2.11:$flink_version"
+
+  // Custom
+  compile "org.apache.flink:flink-connector-kafka-0.11_2.11:$flink_version"
+
   testCompile project(path: ":sdks:java:core", configuration: "shadowTest")
   // FlinkStateInternalsTest extends abstract StateInternalsTest
   testCompile project(path: ":runners:core-java", configuration: "testRuntime")
